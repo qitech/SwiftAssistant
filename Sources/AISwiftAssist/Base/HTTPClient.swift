@@ -39,6 +39,7 @@ extension HTTPClient {
         } else {
             request.allHTTPHeaderFields?["Authorization"] = "Bearer \(Constants.apiKey)"
         }
+        request.allHTTPHeaderFields?["OpenAI-Beta"] = "assistants=v2"
         request.httpBody = endpoint.body?.data
 
         return request
