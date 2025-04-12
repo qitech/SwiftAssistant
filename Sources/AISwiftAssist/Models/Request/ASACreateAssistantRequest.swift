@@ -62,5 +62,9 @@ public struct ASACreateAssistantRequest: Codable {
     public struct Tool: Codable {
         /// The type of the tool (e.g., code_interpreter, retrieval, function).
         let type: String
+        
+        public init(type: String) {
+            self.type = type
+        }
     }
 }
