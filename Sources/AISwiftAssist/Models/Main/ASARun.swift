@@ -59,7 +59,7 @@ public struct ASARun: Codable {
     public let tools: [Tool]
 
     /// The list of File IDs the assistant used for this run.
-    public let fileIds: [String]
+    public let fileIds: [String]?
 
     /// Set of 16 key-value pairs that can be attached to the run. Useful for storing additional information.
     public let metadata: [String: String]?
